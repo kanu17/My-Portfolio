@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Little Paws World</title>
+  <!-- Viewport for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-image:url('Images/bgimg1.jpg');
+      background-image: url('Images/bgimg1.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 100vh;                /* Full viewport height */
-       width: 100vw;                 /* Full viewport width */
-       margin: 0; 
+      min-height: 100vh;   /* Full viewport height */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;   /* Scales with screen size */
+      margin: 20px 10px;
+    }
+
+    p {
+      text-align: center;
+      margin: 20px 0;
     }
 
     a {
       text-decoration: none;
       color: #5a3e2b;
-      font-size: 18px;
+      font-size: 1.1rem;
+      margin: 0 10px;
     }
 
     a:hover {
       color: white;
       text-decoration: underline;
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      a {
+        display: block;   /* Stack links vertically on smaller screens */
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      body {
+        background-position: top;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">🐶 <b>Welcome to Furry World of Adnika</b> 🐶</h1>
+  <h1>🐶 <b>Welcome to Furry World of Adnika</b> 🐶</h1>
 
-<p style="text-align: center;">
+  <p>
     <a href="My-Portfolio/About.html">Home</a> |
     <a href="My-Portfolio/About.html">About Us</a> |
     <a href="My-Portfolio/Contact.html">Contact Us</a> |
-    <a href="My-Portfolio/Kanu.html"> Creator</a>
-
+    <a href="My-Portfolio/Kanu.html">Creator</a>
   </p>
 </body>
 </html>
